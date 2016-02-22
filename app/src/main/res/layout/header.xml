@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="#ddd" >
+
+    <FrameLayout
+        android:id="@+id/flFlag"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_listitem" >
+
+        <ImageView
+            android:id="@+id/ivFlag"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:src="@drawable/flag_kz" />
+    </FrameLayout>
+
+    <inc.numisoft.test.app.RobotoView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="68dp"
+        android:text="КАЗАХСТАН"
+        android:textColor="#333"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/flArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginRight="10dp">
+
+        <inc.numisoft.test.app.RobotoView
+            android:id="@+id/bYear"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button"
+            android:text="ВСЕ ГОДЫ"
+            android:textColor="#333"
+            android:textSize="12sp"
+            android:gravity="center" />
+
+    </FrameLayout>
+
+</RelativeLayout>
